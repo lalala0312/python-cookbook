@@ -9,13 +9,13 @@ prices = {
    'FB': 10.75
 }
 
-# Make a dictionary of all prices over 200
+# 将 200 元以上的编成字典
 p1 = { key:value for key, value in prices.items() if value > 200 }
 
 print("All prices over 200")
 pprint(p1)
 
-# Make a dictionary of tech stocks
+# 制作科技股字典
 tech_names = { 'AAPL', 'IBM', 'HPQ', 'MSFT' }
 p2 = { key:value for key,value in prices.items() if key in tech_names }
 
